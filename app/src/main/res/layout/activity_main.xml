@@ -6,47 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.example.saurabh.firebasedemo.MainActivity">
 
-    <Button
-        android:id="@+id/firebaseBtn"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/name_Field"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:text="Click to Save"
+        android:text="Name :"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailId" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
 
-    <EditText
-        android:id="@+id/valueField"
+    <TextView
+        android:id="@+id/emailField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Enter Your Name"
-        android:inputType="textPersonName"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/emailId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Your Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valueField" />
+        app:layout_constraintTop_toBottomOf="@+id/name_Field"
+        tools:text="Email :" />
 </android.support.constraint.ConstraintLayout>
